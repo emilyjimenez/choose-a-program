@@ -12,51 +12,97 @@
       <h1>Choose a coding program!</h1>
       <p>Not sure what track to choose? Take this quiz to figure out what coding track you should take!</p>
       <br></br>
-      <form>
-    <div class="form-group">
-      <label for="name">Enter your name:</label>
-      <input type="name" class="form-control" id="name">
-    </div>
-    <div class="form-group">
+      <form id="formOne">
+      <div class="form-group">
+        <label for="name">Enter your name:</label>
+        <input type="name" class="form-control" id="name">
+      </div>
       <div class=form-group>
         <label for="personality">Describe your personality:</label>
       </div>
+      <div class="form-group">
+        <div class="radio">
+        <label for ="cold">
+          <input type="radio" name="personality" id="cold" value="cold" checked>
+          Cold and distant
+        </label>
+      </div>
       <div class="radio">
-      <label for ="cold">
-        <input type="radio" name="personality" id="cold" value="cold" checked>
-        Cold and distant
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="personality" id="energetic" value="energetic">
-        Energetic and bubbly
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="personality" id="aggresive" value="aggresive">
-        Aggresive and determined
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="personality" id="lazy" value="lazy">
-        Lazy and slow
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="personality" id="empathetic" value="empathetic">
-        Empathetic and understanding
-      </label>
-    </div>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-    <div id="results">
-    </div>
+        <label>
+          <input type="radio" name="personality" id="energetic" value="energetic">
+          Energetic and bubbly
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="personality" id="aggresive" value="aggresive">
+          Aggresive and determined
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="personality" id="lazy" value="lazy">
+          Lazy and slow
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="personality" id="empathetic" value="empathetic">
+          Empathetic and understanding
+        </label>
+      </div>
+      </div>
+      <div class="form-group">
+        <label>Who's your favorite celebrity?</label>
+      </div>
+      <div class="form-group">
+          <select class="form-control" id="celebrity">
+            <option>Taylor Swift</option>
+            <option>Steve Jobs</option>
+            <option>Kim Kardashian</option>
+          </select>
+      </div>
+      <div class=form-group>
+        <label for="development">Are you interested in front-end or back-end development?</label>
+      </div>
+      <div class="form-group">
+        <div class="radio">
+        <label for ="front-end">
+          <input type="radio" name="development" id="front-end" value="front-end" checked>
+          Front-end
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="development" id="back-end" value="back-end">
+          Back-end
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="development" id="idk" value="idk">
+          I dont know.
+        </label>
+      </div>
+      </div>
+      <div class="form-group">
+        <label for="ready">Are you ready to hunker down, spend +9/hrs a day learning how to code?</label>
+      </div>
+      <div class="form-group">
+        <label class="radio-inline">
+          <input type="radio" id="ready-yes" value="yes" checked> Yes
+        </label>
+        <label class="radio-inline">
+          <input type="radio" id="ready-no" value="no"> No
+        </label>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <div id="results">
+        </div>
 
+      </div>
     </div>
   </body>
 </html>
