@@ -1,19 +1,21 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-    var outcome;
+    var result;
+    var codeimg;
     var name = $("input#name").val();
-    var personalityTrait = $("input:radio[name=personality]checked").val();
+    var personality = $("input:radio[name=personality]:checked").val();
     var celebrity = $("#celebrity");
     var development = $("input:radio[name=development]:checked").val();
     var ready = $("input:radio[name=ready]checked").val();
 
-    if (personalityTrait === "lazy") {
-      outcome = "coding is not for you"
+    if (personality === "lazy"){
+      result = "Coding is not for you.";
+      codeimg = "img/defeated.gif";
     }
 
-    $("#results").removeClass("hide");
-    $("#results p").text(outcome);
-    // $ ("#results img").attr("src", );
+    $("#results").show();
+    $("#results p").text(result);
+    $("#results img").attr("src", codeimg)
   });
 });
