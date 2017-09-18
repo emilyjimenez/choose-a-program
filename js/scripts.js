@@ -9,13 +9,21 @@ $(document).ready(function() {
     var development = $("input:radio[name=development]:checked").val();
     var ready = $("input:radio[name=ready]:checked").val();
 
+    //Lazy or not ready
     if (personality === "lazy" || ready === "no"){
       result = "Coding is not for you.";
       codeimg = "img/defeated.gif";
-    } else if (development === "idk") {
-      result = "Java/Android! Maybe you'd like to make a game or a helpful app since you arent sure about back-end or front-end development."
-      codeimg = "img/android.gif"
-    } else if
+    // IDK = Apps
+  } else if (development === "idk") {
+    result = "Java/Android. Maybe you'd be better at making games and apps than worrying about front-end vs back-end."
+    codeimg = "img/android.gif"
+  } else if (development === "front-end") {
+    result = "Front-end! You like to make stuff look pretty"
+    codeimg = "img/zen.gif"
+  } else if (development === "back-end") {
+    result = "Back-end! You're all about that functionality and seeing the potential of something."
+    codeimg = "img/backend.gif"
+  }
 
     $("#results").show();
     $("#results p").text(result);
