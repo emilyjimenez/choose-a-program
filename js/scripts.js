@@ -18,10 +18,10 @@ $(document).ready(function() {
     result = "Java/Android. Maybe you'd be better at making games and apps than worrying about front-end vs back-end."
     codeimg = "img/android.gif"
   } else if (development === "front-end") {
-    result = "Front-end! You like to make stuff look pretty"
+    result = "CSS/Design! You like to make stuff look pretty"
     codeimg = "img/zen.gif"
   } else if (development === "back-end") {
-    result = "Back-end! You're all about that functionality and seeing the potential of something."
+    result = "C#/.Net! You're all about that functionality and seeing the potential of something."
     codeimg = "img/backend.gif"
   }
 
